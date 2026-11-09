@@ -1,0 +1,148 @@
+{
+  "schema_version": "0.1.0-draft",
+  "status": "example_incomplete",
+  "run_id": "698bfede2fd73a692e3e65945ac63aee54b0afa8d6358f8108622c2634a4765c",
+  "description": "Five-snapshot subset of loops_mixed_Rz167-edir001. Original input scripts, initial configuration, and full-run log retained. Numerical readouts stop at step 40.",
+  "contributors": null,
+  "data_license": null,
+  "source": {
+    "filename": "loops_mixed_Rz167-edir001.h5",
+    "subset_input_sha256": "4c6bafc7e045db7b4707e372bc4d459832350795db04c5d2f9edc48931fa8e5b",
+    "original_snapshot_count": 1122,
+    "retained_steps": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ]
+  },
+  "conventions": {
+    "length_unit": null,
+    "time_unit": null,
+    "burgers_unit": null,
+    "coordinate_frame": null,
+    "cell_matrix_convention": null,
+    "segment_direction_convention": null,
+    "periodic_segment_convention": null,
+    "node_id_scope": null,
+    "readout_fields": null
+  },
+  "physics": null,
+  "numerics": null,
+  "software": {
+    "name": "OpenDiS / ExaDiS",
+    "repository": null,
+    "commit": "1f384ac672418b51496fc957b1f959114fcfa0f5",
+    "commit_evidence": "/inputs/git_head_txt; batch script records the OpenDiS-fork working directory. Remote URL and ExaDiS submodule identity are not recorded here.",
+    "submodules": null,
+    "working_tree_status": null,
+    "build_instructions": null,
+    "source_bundle": null
+  },
+  "environment": {
+    "dependencies": null,
+    "compiler": null,
+    "build_flags": null,
+    "backend": null,
+    "hardware": null,
+    "parallelism": null
+  },
+  "recorded_environment_evidence": {
+    "batch_script_path": "/inputs/strainhard_sbat",
+    "module_load_line": "gcc/10.3.0 cuda/12.1.1 cmake/3.26.3 python/3.10 fftw uv",
+    "requested_gpus": 1,
+    "requested_cpus": 4,
+    "note": "These are recorded job settings, not an environment lock or verified compiler/build description. Full original log is retained in /other_outputs."
+  },
+  "embedded_inputs": {
+    "driver": "/inputs/strainhard_py",
+    "batch_script": "/inputs/strainhard_sbat",
+    "parameters": "/inputs/prms",
+    "initial_configuration": "/inputs/initial_configuration"
+  },
+  "restart_assets": null,
+  "restart": {
+    "0": {
+      "format": null,
+      "checkpoint": null,
+      "working_directory": null,
+      "argv": null,
+      "expected_start_time": 0.0,
+      "verification": {
+        "status": "not_run",
+        "procedure": null,
+        "acceptance_criteria": null,
+        "environment": null,
+        "result_summary": null,
+        "report": null
+      }
+    },
+    "10": {
+      "format": null,
+      "checkpoint": null,
+      "working_directory": null,
+      "argv": null,
+      "expected_start_time": 2.5958682111999997e-09,
+      "verification": {
+        "status": "not_run",
+        "procedure": null,
+        "acceptance_criteria": null,
+        "environment": null,
+        "result_summary": null,
+        "report": null
+      }
+    },
+    "20": {
+      "format": null,
+      "checkpoint": null,
+      "working_directory": null,
+      "argv": null,
+      "expected_start_time": 1.1849660268953602e-08,
+      "verification": {
+        "status": "not_run",
+        "procedure": null,
+        "acceptance_criteria": null,
+        "environment": null,
+        "result_summary": null,
+        "report": null
+      }
+    },
+    "30": {
+      "format": null,
+      "checkpoint": null,
+      "working_directory": null,
+      "argv": null,
+      "expected_start_time": 2.18496602689536e-08,
+      "verification": {
+        "status": "not_run",
+        "procedure": null,
+        "acceptance_criteria": null,
+        "environment": null,
+        "result_summary": null,
+        "report": null
+      }
+    },
+    "40": {
+      "format": null,
+      "checkpoint": null,
+      "working_directory": null,
+      "argv": null,
+      "expected_start_time": 3.1849660268953595e-08,
+      "verification": {
+        "status": "not_run",
+        "procedure": null,
+        "acceptance_criteria": null,
+        "environment": null,
+        "result_summary": null,
+        "report": null
+      }
+    }
+  },
+  "restart_notes": [
+    "The embedded driver implements from_restart via read_restart and passes restart to SimulateNetworkPerf.",
+    "Snapshot attributes include integrator fields, but their sufficiency for complete native checkpoint reconstruction has not been established.",
+    "No native restart files, exact source bundle, environment lock, or continuation verification report are supplied.",
+    "This is an inspection/format-development fixture, not an accepted restart-complete community upload."
+  ]
+}
